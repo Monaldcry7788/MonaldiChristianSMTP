@@ -239,6 +239,12 @@ public class Frame extends javax.swing.JFrame {
 
             System.out.println("Email inviata con successo!");
             txp_log.setText(builder.toString());
+            txt_smtpServer.setText("");
+            txt_hostname.setText("");
+            txt_mittente.setText("");
+            txt_destinatario.setText("");
+            txt_soggetto.setText("");
+            txp_body.setText("");
         } catch (IOException ex) {
             Logger.getLogger(Frame.class.getName()).log(Level.SEVERE, null, ex);
         }
